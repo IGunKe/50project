@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item {
+    cursor: pointer;
+    height: 500px;
+    border-radius: 10px;
+    margin: 50px 10px;
+    flex: 0.5;
+    transition: all 1s ease-in;
+}
+.container .item:nth-child(1) {
+
+    background: pink url('../image/item1.webp') 100% 100%;
+}
+.container .item:nth-child(2) {
+
+    background: pink url('../image/item2.webp') 100% 100%;
+}
+.item.active {
+    flex: 5;
+}
+
