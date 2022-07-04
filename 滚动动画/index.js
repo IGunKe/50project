@@ -6,6 +6,7 @@ function checkBoxes() {
     const triggerBottom = (window.innerHeight / 5) * 4;
 
     boxes.forEach((box) => {
+        //getBoundingClientRect方法返回元素的大小及其相对于视口的位置。
         const boxTop = box.getBoundingClientRect().top;
         console.log(boxTop);
         if (boxTop < triggerBottom) {
