@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .container {
+        background-color: rgba(0, 0, 0, .4);
+        padding: 20px 40px;
+        border-radius: 4px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .btn {
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            background-color: lightblue;
+            padding: 15px;
+            font-size: 15px;
+            border: 0;
+            border-radius: 5px;
+            margin-bottom: 30px;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+
+        .form-control {
+            margin: 20px 0 40px;
+            width: 300px;
+            position: relative;
+
+            input {
+                background-color: transparent;
+                border: 0;
+                border-bottom: 2px solid #fff;
+                display: block;
+                width: 100%;
+                padding: 15px 0;
+                font-size: 18px;
+                color: #fff;
+
+                &:focus,
+                &:valid {
+                    outline: 0;
+                    border-bottom-color: lightblue;
+
+                }
+
+                &:focus+label span,
+                &:valid+label span {
+                    color: lightblue;
+                    transform: translateY(-30px);
+                }
+            }
+
+            label {
+                position: absolute;
+                top: 15px;
+                left: 0;
+
+                span {
+                    display: inline-block;
+                    font-size: 18px;
+                    min-width: 5px;
+                    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                }
+            }
+        }
+    }
+}
