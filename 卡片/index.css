@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+}
+body h1 {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+body .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+body .container .faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  position: relative;
+}
+body .container .faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+body .container .faq.active .faq-text {
+  display: block;
+}
+body .container .faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
+body .container .faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+body .container .faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+body .container .faq .faq-title {
+  margin: 0 35px 0 0;
+}
+body .container .faq .faq-text {
+  display: none;
+  margin: 30px 0 0 0;
+}
+body .container .faq .faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+body .container .faq .faq-toggle .fa-times {
+  display: none;
+}
