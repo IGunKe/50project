@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+    align-items: center;
+    width: 400px;
+}
+.todo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+.todo ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.todo ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: all 0.5s;
+}
+.todo ul li:hover {
+    background-color: #0f172a;
+}
+.input-container input {
+    width: 260px;
+    height: 36px;
+    border: 0;
+    outline: 0;
+    background-color: #1e293b;
+    box-shadow: 0 2px 5px #0f172a;
+    padding: 9px;
+    color: #9ca3af;
+}
+
+.input-container button {
+    width: 90px;
+    height: 36px;
+    background-color: #0f172a;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    color: #9ca3af;
+}
