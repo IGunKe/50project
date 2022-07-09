@@ -7,6 +7,7 @@ export default {
     },
     data() {
         return {
+            filter: 'all',
             inputArticle: '',
             todoList: []
         }
@@ -14,8 +15,12 @@ export default {
     methods: {
         add() {
             //alert(this.inputArticle);
-            this.todoList.push(this.inputArticle);
+            this.todoList.push({ todo: this.inputArticle , isTodo: false});
             this.inputArticle = '';
+        },
+        editTodo(index) {
+            
+            this.todoList[index].isTodo = !this.todoList[index].isTodo;
         }
     }
 }

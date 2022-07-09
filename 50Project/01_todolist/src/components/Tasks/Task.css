@@ -3,11 +3,29 @@
     height: 36px;
     padding: 9px;
     margin: 12px 0;
-    
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
 }
 p {
+    width: 200px;
     height: 100%;
     padding: 0 auto;
     padding-left: 3px;
+    cursor: pointer;
+    border-left: 5px solid red;
+}
+p + div {
+    width: 20px;
+}
+.icon1 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../../assets/delete.png') 100% 100% no-repeat;
+    background-size: 26px;
+}
+.active {
+    text-decoration: line-through;
     border-left: 5px solid #22c45e;
 }

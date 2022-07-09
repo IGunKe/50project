@@ -1,9 +1,11 @@
 <template>
-    <div class="taskList">
-        <p>
+    <div class="taskList" >
+        <p @click="$emit('changeCondition')">
             {{ input }}
         </p>
-        
+        <div>
+            <i @click="$emit('showFunc')" class="icon1"></i>
+        </div>
     </div>
 </template>
 
